@@ -36,19 +36,19 @@
       slot: "slot1",
       title: "Universal button",
       description: "The universal button on earbuds controls playback, calls, and voice assistants with simple taps or holds.",
-      imgSrc: "images/"
+      imgSrc: "images/press.svg"
     },
     {
       slot: "slot2",
       title: "Speaker",
       description: "A speaker that delivers powerful, high-quality sound for music, calls, and more—connect easily and enjoy clear audio anywhere.",
-      imgSrc: "images/"
+      imgSrc: "images/speaker.svg"
     },
     {
       slot: "slot3",
       title: "Microphone",
       description: "A microphone captures clear audio for calls, recording, and streaming.",
-      imgSrc: "images/"
+      imgSrc: "images/mic.svg"
     }
   ];
   
