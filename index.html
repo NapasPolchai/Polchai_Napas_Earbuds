@@ -1,52 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>comf EarBuds</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/main.css" rel="stylesheet"/>
-    <!-- link to greensock main library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-  </head>
-  <body>
-    <model-viewer id="model" src="model/earbuds.gltf" ar ar-modes="webxr scene-viewer quick-look" ios-src="model/earbuds.usdz" camera-controls poster="images/poster.webp" shadow-intensity="1" environment-image="images/aircraft_workshop_01_1k.hdr" exposure="1.7" camera-orbit="52.34deg 88.29deg 874.8m" field-of-view="30deg">
 
-      <button class="Hotspot" slot="hotspot-1" data-position="22.114881038306805m 76.41863141465969m 92.72411936367459m" data-normal="0m 3.422854333301474e-8m 0.9999999999999996m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">
-            <h2>Sexy looks</h2>
-            <p>Pls don't assault our earbuds cuz they sexy</p>
-          </div>
-      </button>
-      
-      <button class="Hotspot" slot="hotspot-2" data-position="39.77344034970514m 35.166245058302174m -60.072171234357924m" data-normal="0.9907333466758325m -0.04850912905944068m 0.12686331298842657m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">
-            <h2>Comfortable Fit</h2>
-            <p>Three pairs of ultra comfortable silicone tips are included</p>
-          </div>
-      </button>
-      
-      <button class="Hotspot" slot="hotspot-3" data-position="2.4492803380076666m 10.895113621640228m -85.35108450441453m" data-normal="-0.09319883119990514m 0.7267314834938743m -0.6805698559014823m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">
-            <h2>Ultra Fast Charge</h2>
-            <p>20w charger included yes yes we are good</p>
-          </div>
-      </button>
-      
-      <button class="Hotspot" slot="hotspot-4" data-position="8.209706351369618m -74.79136002933947m 11.903197074480694m" data-normal="0.018820622483499312m -0.18212597696599156m -0.9830950679784314m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">
-            <h2>360 Audio</h2>
-            <p>Oh my god just look at this innovation</p>
-          </div>
-      </button>
-      <button slot="ar-button" id="ar-button">
-          View in your space
-      </button>
-      <div id="ar-prompt">
-          <img src="images/ar_hand_prompt.png">
+<head>
+  <title>comf EarBuds</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/main.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sanchez:ital@0;1&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/grid.css">
+  <!-- link to greensock main library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+</head>
+
+<body>
+  <nav class="navigation__logo grid-con">
+    <div class="col-end-1">
+      <a href="index.html"><img src="images/earbuds-logo.svg" alt="logo"></a>
+    </div>
+    <div class="col-end-10"></div>
+    <div class="col-end-1">
+      <img src="images/burger.svg" alt="nav">
+    </div>
+  </nav>
+
+  <section class="grid-con" id="hero">
+    <div class="col-end-12">
+      <h5 class=title>Harmony heaven</h5>
+      <h1>TuneTown<br>Where Music <br>Comes to Life</h1>
+    </div>
+  </section>
+
+
+  <model-viewer id="model" src="model/earbuds.gltf" ar ar-modes="webxr scene-viewer quick-look"
+    ios-src="model/earbuds.usdz" camera-controls poster="images/poster.webp" shadow-intensity="1"
+    environment-image="images/aircraft_workshop_01_1k.hdr" exposure="1.7" camera-orbit="52.34deg 88.29deg 874.8m"
+    field-of-view="30deg">
+    <button class="Hotspot" slot="hotspot-1"
+      data-position="0.28863222192752547m 0.24132545441740072m -0.26342805572321976m"
+      data-normal="-0.9999999999999996m 3.4228542950295595e-8m 0m" data-visibility-attribute="visible">
+      <!-- change the p tag description and add image -->
+      <div class="HotspotAnnotation">
+        <h2>Universal button</h2>
+        <p>The universal button on earbuds controls playback, calls, and voice assistants with simple taps or holds.</p>
+        <img src="images/" alt="">
       </div>
-    </model-viewer>  
+    </button>
+
+    <button class="Hotspot" slot="hotspot-2"
+      data-position="0.8513638377189636m 0.20464057619569762m -0.2901405711956941m" data-normal="1m 0m 0m"
+      data-visibility-attribute="visible">
+      <!-- change the p tag description and add image -->
+      <div class="HotspotAnnotation">
+        <h2>Speaker</h2>
+        <p>A speaker that delivers powerful, high-quality sound for music, calls, and more—connect easily and enjoy clear audio anywhere.</p>
+        <img src="images/" alt="speaker">
+      </div>
+    </button>
+
+    <button class="Hotspot" slot="hotspot-3"
+      data-position="0.5772853455322848m -0.5298130203055258m 0.042042275117278816m"
+      data-normal="0.45399051059814693m 0.6300367324037656m 0.6300367704418688m" data-visibility-attribute="visible">
+      <!-- change the p tag description and add image -->
+      <div class="HotspotAnnotation">
+        <h2>Microphone</h2>
+        <p>A microphone captures clear audio for calls, recording, and streaming.</p>
+        <img src="images/" alt="">
+      </div>
+    </button>
+
+
+
+  </model-viewer>
   <!-- Loads <model-viewer> for browsers: -->
-    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
